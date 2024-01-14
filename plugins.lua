@@ -60,6 +60,14 @@ local plugins = {
   --   "mg979/vim-visual-multi",
   --   lazy = false,
   -- }
+  {
+    "kdheepak/lazygit.nvim",
+    -- optional for floating window border decoration
+    cmd = "LazyGit",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+  },
 }
 
 return plugins
