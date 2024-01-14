@@ -5,11 +5,13 @@ M.treesitter = {
     "vim",
     "lua",
     "html",
-    "css",
-    "javascript",
-    "typescript",
-    "tsx",
+    -- "css",
+    -- "javascript", -- we ain't webdevvin yet
+    -- "typescript",
+    -- "tsx",
     "c",
+    "objc",
+    "cpp",
     "markdown",
     "markdown_inline",
   },
@@ -28,14 +30,14 @@ M.mason = {
     "stylua",
 
     -- web dev stuff
-    "css-lsp",
+    -- "css-lsp",
     "html-lsp",
-    "typescript-language-server",
-    "deno",
-    "prettier",
+    -- "typescript-language-server",
+    -- "deno",
+    -- "prettier",
 
     -- c/cpp stuff
-    "clangd",
+    -- "clangd", -- disabling clangd because on mac we have clangd preinstalled via xcode
     "clang-format",
   },
 }
