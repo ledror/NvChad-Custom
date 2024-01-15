@@ -19,6 +19,18 @@ M.general = {
   },
 }
 
+M.zen = {
+  n = {
+    ["<leader>zm"] = { "<cmd>ZenMode<cr>", "enter zen mode",},
+  }
+}
+
+M.LazyGit = {
+  n = {
+    ["<leader>lg"] = { "<cmd>LazyGit<cr>", "enter lazygit"},
+  }
+}
+
 -- more keybinds!
 
 return M
