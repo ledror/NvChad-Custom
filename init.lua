@@ -7,3 +7,5 @@
 -- })
 
 require("custom.autocmds")
+
+vim.opt.relativenumber = true
