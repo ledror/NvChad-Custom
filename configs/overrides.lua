@@ -16,10 +16,11 @@ M.treesitter = {
     "markdown_inline",
   },
   indent = {
-    enable = true,
-    -- disable = {
-    --   "python"
-    -- },
+    enable = false,
+    disable = {
+      "python",
+      "objc",
+    },
   },
 }
 

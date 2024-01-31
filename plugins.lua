@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -16,7 +16,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
@@ -70,14 +70,26 @@ local plugins = {
   },
 
   {
-    'folke/zen-mode.nvim',
+    "folke/zen-mode.nvim",
     cmd = "ZenMode",
     opts = {
       -- your configuration comes here
       -- or leave it empty to use the default settings
       -- refer to the configuration section below
     },
-  }
+  },
+
+  -- {
+  --   'ranjithshegde/ccls.nvim',
+  --   cmd = "Ccls",
+  --   conig = function ()
+  --     require "custom.configs.ccls"
+  --   end,
+  -- }
+  {
+    "untitled-ai/jupyter_ascending.vim",
+    lazy = false,
+  },
 }
 
 return plugins
